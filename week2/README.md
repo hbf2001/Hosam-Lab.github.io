@@ -1,2 +1,2 @@
-# Web Programming lab1.
-Creating and adding files to start editing the contents later on.
+# Web Programming lab2.
+All tasks done.
