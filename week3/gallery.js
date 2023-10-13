@@ -4,7 +4,7 @@ let images = slidesDiv.getElementsByName("img");
 
 const nextButton = document.querySelectorAll(".next");
 const prevButton = document.querySelectorAll(".prev")
-
+//add
 nextButton.addEventListener("click", function() {
 
     if(currentSlide === 8)
