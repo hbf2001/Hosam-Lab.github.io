@@ -1,32 +1,31 @@
-let currentSlide = document.getElementsByClassName("numberText").textContent;
-let slidesDiv = document.querySelectorAll(".mySlides");
-let images = slidesDiv.getElementsByName("img");
+let images = [];
+images[0] = "images/imageSlider1.jpeg";
+images[1] = "images/imageSlider2.jpeg";
+images[2] = "images/imageSlider3.jpeg";
+images[3] = "images/imageSlider4.jpeg";
+images[4] = "images/imageSlider5.jpeg";
+images[5] = "images/imageSlider6.jpeg";
+images[6] = "images/imageSlider7.jpeg";
+images[7] = "images/imageSlider8.avif";
 
-const nextButton = document.querySelectorAll(".next");
-const prevButton = document.querySelectorAll(".prev")
-//add
-nextButton.addEventListener("click", function() {
+let i = 0;//var to start image display.
+const time = 3000;//time set to 3000 ms or 3 s.
 
-    if(currentSlide === 8)
-        nextButton.disabled = true;
-    else
-        nextButton.disabled = false;
+//Function for slide show.
+function imageSlider() {
+    document.slide.src = images[i];
 
+    if(i < images.length - 1 ) 
+        i++;
 
-    //Display mySlides that has number text that respective number
-    //increment current slide
-    images.style.display = "block";
-    currentSlide++;
+    else 
+        i = 0;
 
-});
+    setTimeout("imageSlider()", time);
+}
 
-prevButton.addEventListener("click", function(){
+window.onload = imageSlider;
 
-    if(currentSlide === 1)
-        prevButton.disabled = true;
-    else
-        prevButton.diabled = false;
-});
 
 
 
