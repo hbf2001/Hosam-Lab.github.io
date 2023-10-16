@@ -16,7 +16,7 @@
   <style>
     form {
       width: 300px;
-      margin: 20vh auto 0 auto;
+      margin: 10vh auto 0 auto;
       /* This centers the form vertically and
       horizontally */
       padding: 20px;
@@ -55,12 +55,59 @@ background color, no border, and rounded corners */
     }
 
     /* Container for input fields: using flexbox for layout, column direction */
-.input-control {
-display: flex;
-flex-direction: column; /* Stack the children (label, input, error message)
+    .input-control {
+      display: flex;
+      flex-direction: column;
+      /* Stack the children (label, input, error message)
 vertically */
-}
+    }
 
+    /* Style for input fields inside the container: border style, rounded corners,
+block-level display, font size, padding, full width */
+    .input-control input {
+      border: 2px solid #f0f0f0;
+      /* Light gray border for the inputs */
+      border-radius: 4px;
+      /* Rounded corners for the inputs */
+      display: block;
+      /* Display input field as a block */
+      font-size: 12px;
+      /* Text size within the input field */
+      padding: 10px;
+      /* Space inside the input field */
+      width: 90%;
+      /*Altered the width because keeping it 100% was not visually appealing*/
+      /* Input field takes up 900% of the form's width */
+    }
+
+    /* Remove focus outline from input fields */
+    .input-control input:focus {
+      outline: 0;
+      /* Remove outline when input is focused */
+    }
+
+    /* Style for input fields with class "success": green border */
+    .input-control.success input {
+      border-width: 2px;
+      border-color: #09c372;
+      /* Green border to indicate successful input */
+    }
+
+    /* Style for input fields with class "error": red border */
+    .input-control.error input {
+      border-color: #ff3860;
+      /* Red border to indicate an error in input */
+    }
+
+    /* Style for the error message: text color, font size, and height */
+    .input-control .error {
+      color: #ff3860;
+      /* Red text color for error messages */
+      font-size: 9px;
+      /* Smaller font size for error messages */
+      height: 13px;
+      /* Explicit height to ensure consistent spacing */
+    }
   </style>
 
 </head>
@@ -84,33 +131,35 @@ vertically */
 
     <main>
 
-      <form action="/" method="get">
-        <h1>Sign Up</h1>
+      <div class="input-control">
 
-        <fieldset>
-          <label for="username">Username</label>
-          <input type="text" id="username" autocomplete="on" placeholder="Enter a Username" name="username">
-          <div class="error" id="username-error"></div>
+        <form id="myForm">
+          <h1>Sign Up</h1>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" autocomplete="on" placeholder="Enter a Username" name="username">
+            <div class="error" id="username-error"></div>
 
 
-          <label for="email">Email</label>
-          <input type="email" id="email" autocomplete="on" placeholder="Enter your Email" name="email">
-          <div class="error" id="email-error"></div>
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="on" placeholder="Enter your Email" name="email">
+            <div class="error" id="email-error"></div>
 
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" autocomplete="off" placeholder="Enter a password">
-          <div class="error" id="password-error"></div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" autocomplete="off" placeholder="Enter a password">
+            <div class="error" id="password-error"></div>
 
-          <label for="confirmpass">Confirm Password</label>
-          <input type="password" id="confirmpass" name="confirmpass" autocomplete="off"
-            placeholder="Confirm Your Password">
-          <div class="error" id="confirmpass-error"></div>
+            <label for="confirmpass">Confirm Password</label>
+            <input type="password" id="confirmpass" name="confirmpass" autocomplete="off"
+              placeholder="Confirm your Password">
+            <div class="error" id="confirmpass-error"></div>
 
-          <button type="submit">Sign Up</button>
+            <button type="submit">Sign Up</button>
 
-        </fieldset>
+        </form>
 
-      </form>
+      </div>
+
     </main>
 
     <footer>
