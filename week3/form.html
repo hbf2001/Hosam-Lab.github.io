@@ -88,7 +88,6 @@ block-level display, font size, padding, full width */
 
     /* Style for input fields with class "success": green border */
     .input-control.success input {
-      border-width: 2px;
       border-color: #09c372;
       /* Green border to indicate successful input */
     }
@@ -131,34 +130,37 @@ block-level display, font size, padding, full width */
 
     <main>
 
-      <div class="input-control">
-
         <form id="myForm">
           <h1>Sign Up</h1>
 
+          <div class="input-control">
             <label for="username">Username</label>
             <input type="text" id="username" autocomplete="on" placeholder="Enter a Username" name="username">
             <div class="error" id="username-error"></div>
+          </div>
 
-
+          <div class="input-control">
             <label for="email">Email</label>
             <input type="email" id="email" autocomplete="on" placeholder="Enter your Email" name="email">
             <div class="error" id="email-error"></div>
+          </div>
 
+          <div class="input-control">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" autocomplete="off" placeholder="Enter a password">
             <div class="error" id="password-error"></div>
+          </div>
 
+          <div class="input-control">
             <label for="confirmpass">Confirm Password</label>
             <input type="password" id="confirmpass" name="confirmpass" autocomplete="off"
               placeholder="Confirm your Password">
             <div class="error" id="confirmpass-error"></div>
+          </div>
 
             <button type="submit">Sign Up</button>
 
         </form>
-
-      </div>
 
     </main>
 
