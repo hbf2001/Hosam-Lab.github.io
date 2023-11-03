@@ -11,8 +11,8 @@ ourRequest.open('GET', 'https://hbf2001.github.io/Hosam-Lab.github.io/week4/Unde
 ourRequest.onload = function () {
 
     //Response text is the data captured from the server
-    var data = JSON.parse(ourRequest.responseText);
-    renderHTML(data);
+    var ourData = JSON.parse(ourRequest.responseText);
+    renderHTML(ourData);
     button.classList.add("hide-me");//Button to be hidden after the data has been displayed
 };
 ourRequest.send();
