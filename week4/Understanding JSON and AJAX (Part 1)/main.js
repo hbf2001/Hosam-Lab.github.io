@@ -5,7 +5,7 @@ var cityContainer = document.getElementById("city-info");
 button.addEventListener("click", function(){
 
 //Getting data from the json file created.
-ourRequest.open('GET', 'https://hbf2001.github.io/Hosam-Lab.github.io/week4/cities1.json');
+ourRequest.open('GET', 'https://hbf2001.github.io/Hosam-Lab.github.io/week4/Understanding%20JSON%20and%20AJAX%20(Part%201)/cities1.json');
 
 //onload used to specify what happens when the http request is completed
 ourRequest.onload = function () {
