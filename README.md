@@ -18,5 +18,6 @@ Brief explaination on the implementation of the form validation using JavaScript
 First started off by getting the input fields and error fields and saving them in a variable via the DOM and defined a regular expression "emailFormat" to validate email addresses. Then created a function validateInput() that takes a field, error element, error message, and a condition to check. It updates the styling and error messages of the input elements based on the condition. Then added an event listener to the form submit button that triggers the validation process. Then checked each input field and applied the validateInput function to validate the input data. Maintained a variable isValid to keep track of the overall form validation status. Added the event.preventDefault() at the end to prevent page reload as requested in the lab sheet.
 
 Lab 4 part 1 (Understanding JSON and AJAX): https://hbf2001.github.io/Hosam-Lab.github.io/week4/Understanding%20JSON%20and%20AJAX%20(Part%201)/
+
 Lab 4 part 2 (Exercise - Fetching Weather Data): https://hbf2001.github.io/Hosam-Lab.github.io/week4/Exersice-Fetching%20Weather%20Data%20(Part%202)/
 
