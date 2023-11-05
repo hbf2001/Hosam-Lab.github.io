@@ -19,5 +19,5 @@ First started off by getting the input fields and error fields and saving them i
 
 Lab 4 part 1 (Understanding JSON and AJAX): https://hbf2001.github.io/Hosam-Lab.github.io/week4/Understanding%20JSON%20and%20AJAX%20(Part%201)/
 
-Lab 4 part 2 (Exercise - Fetching Weather Data): https://hbf2001.github.io/Hosam-Lab.github.io/week4/Exersice-Fetching%20Weather%20Data%20(Part%202)/
+Lab 4 part 2 (Exercise - Fetching Weather Data): https://hbf2001.github.io/Hosam-Lab.github.io/week4/Exersice-Fetching%20Weather%20Data%20(Part%202)/app.html
 
